@@ -58,6 +58,46 @@ class LinkedList {
     }
 
 
+
+
+    public void removeEndNode(){
+        if(nodeCount == 0){
+            System.out.println("linked list has no data");
+            return ;
+
+        }
+       if(nodeCount == 1){
+           previousNode=null;
+           currentNode =null;
+       }else{
+           linkNode n =firstNode;
+           while(n.next.next.next != null){
+               n=n.next;
+           }
+           previousNode =n ;
+           currentNode =n.next;
+           n.next.next=null;
+       }
+       nodeCount--;
+    }
+
+
+    public void removeStartNode(){
+        if(nodeCount == 0){
+            System.out.println("linked list has no data");
+            return ;
+        }
+        if(nodeCount == 1){
+            previousNode=null;
+            currentNode =null;
+        }else{
+            firstNode=firstNode.next;
+        }
+        nodeCount--;
+
+    }
+
+
     public void display(){
         linkNode currNode = firstNode;
         int count = 0;
@@ -93,6 +133,21 @@ public class MyLinkedList {
         );
         list.display();
 
-    }
+        list.removeEndNode();
+        System.out.println("after deleting the last element ");
+        list.display();
+        list.removeEndNode();
+        list.removeEndNode();
+        System.out.println("after removing the last element ");
+        list.display();
+        list.removeStartNode();
+        list.removeStartNode();
+        System.out.println("after first the last element ");
+        list.display();
+        list.removeStartNode();
+        list.removeStartNode();
+        System.out.println("after first the last element ");
 
+    }
 }
+
