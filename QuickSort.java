@@ -1,5 +1,6 @@
 public class QuickSort {
 
+
     public void  sort(int arr[], int low , int high){
         if(low < high){
             int pi=partition(arr,low,high);
@@ -55,5 +56,6 @@ public class QuickSort {
             System.out.print(i+",");
         }
         System.out.println(" ]");
+
     }
 }
