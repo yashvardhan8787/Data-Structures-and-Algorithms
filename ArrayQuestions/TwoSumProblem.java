@@ -5,6 +5,9 @@ import java.util.HashMap;
 
 public class TwoSumProblem {
 
+    //Find the 2 Elements in a  Array Which Has Sum K .
+
+
     public static void bruteForceApproach(int[] arr, int k ){
         for(int i = 0 ; i < arr.length ; i++){
             for(int j = i+1 ; j < arr.length ;j++ ){
@@ -44,7 +47,7 @@ public class TwoSumProblem {
                 System.out.println("sum of "+arr[left]+" and "+arr[right]+" is a "+k);
                 return;
             }
-            else if(sum < k ) left++;
+            else if(sum < k )left++;
             else right--;
         }
 
