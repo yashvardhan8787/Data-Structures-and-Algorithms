@@ -7,7 +7,7 @@ import java.util.List;
 
 public class MergeOverlapIntervals {
 
-    public static void brute(int[][] arr) {
+    public static void MergeIntervals(int[][] arr) {
         // Convert 2D array to List
         List<int[]> list = new ArrayList<>(Arrays.asList(arr));
         List<int[]> result= new ArrayList<>();
@@ -42,6 +42,6 @@ public class MergeOverlapIntervals {
         //Arrays of intervals
         //merge the overlapping intervals
      int[][] arr = {{1,3},{2,6},{8,9},{9,11},{8,10},{2,4},{15,18},{16,17}};
-     brute(arr);
+     MergeIntervals(arr);
     }
 }
