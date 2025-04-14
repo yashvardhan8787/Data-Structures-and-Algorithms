@@ -20,6 +20,11 @@ public class FindTimesSortedArrayRotated {
         int low=0,high= arr.length -1;
         int RotateCount= 0;
         while(low <= high){
+
+            if (arr[low] <= arr[high]) {
+                System.out.println(low);
+                return;
+            }
             int mid=(low +high)/2;
 
             if(mid != arr.length-1) {
