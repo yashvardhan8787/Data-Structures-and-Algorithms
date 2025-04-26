@@ -35,4 +35,8 @@ public class BookAllocation {
         }
         return  low;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
