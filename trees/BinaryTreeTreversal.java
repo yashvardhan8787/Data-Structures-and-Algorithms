@@ -1,6 +1,4 @@
 package trees;
-import BinaryTree.Node;
-
 
 class BinaryTreeTreversal{
    Node root;
