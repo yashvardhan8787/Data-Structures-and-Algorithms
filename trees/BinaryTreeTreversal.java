@@ -2,7 +2,6 @@ package trees;
 
 class BinaryTreeTreversal{
    Node root;
-
    public void addElement(Node element){
     root = addRecursive(root, element);
    }
