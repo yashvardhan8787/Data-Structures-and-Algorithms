@@ -9,7 +9,7 @@ class Node{
     Node left;
     Node right;
 }
-class BinaryTree {
+public class BinaryTree {
     Node root;
 
     public void addElement(Node element) {
